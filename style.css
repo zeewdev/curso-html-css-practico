@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background: #fcffe5;
+  padding: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  background: linear-gradient(115.68deg, #d9f99d -13.06%, #e4f474 116.6%);
+  box-shadow: 0px 8px rgba(228, 224, 116, 0.34);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+#navbar {
+  background: #fefff8;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.nav__ul {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  list-style: none;
+  justify-content: center;
+}
+
+.nav__links {
+  color: #868686;
+  text-decoration: none;
+}
+
+.nav__links-home {
+  color: #77ae31;
+}
+
+.nav__body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.vav__text {
+  color: #2c2c2c;
+}
+
+.vav__text h1 {
+    font-size: 4rem;
+}
+
+.img {
+  width: 50%;
+  height: 50%;
+}
+
+.img img {
+  width: 100%;
+  height: 100%;
+}
+
+section {
+  margin: 1rem 0;
+  color: #2c2c2c;
+}
+
+section h1 {
+  margin-bottom: 1rem;
+}
+
+.about__title {
+  margin-bottom: 0.5rem;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.card {
+  background: #e8fbc5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  max-width: 200px;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+}
+
+/* FORMULARIO */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 35%;
+  padding: 0.5rem;
+  outline: none;
+  border: none;
+  background: #cee3a6;
+  color: #2c2c2c;
+  border-radius: 0.3rem;
+}
+
+button {
+  padding: 0.5rem;
+  background: #77ae31;
+  color: #fff;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #5e8e1f;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 768px) {
+  .card {
+    max-width: 100%;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+  }
+
+  .nav__body {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
